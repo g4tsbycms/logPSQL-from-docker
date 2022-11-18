@@ -1,0 +1,21 @@
+docker run -d --name postgresql -e POSTGRES_USER=dev_PSQL -e POSTGRES_PASSWORD=My_3c0mm#PSQL --network netPSQL --volume VOL_PSQL:/bitnami bitnami/postgresql:latest
+docker run -d --name phppgadmin -p 80:8080 -p 443:8443 --network netPSQL bitnami/postgresql:latest
+
+2022-11-18 01:55:22 postgresql 04:55:22.79 
+2022-11-18 01:55:22 postgresql 04:55:22.79 Welcome to the Bitnami postgresql container
+2022-11-18 01:55:22 postgresql 04:55:22.80 Subscribe to project updates by watching https://github.com/bitnami/containers
+2022-11-18 01:55:22 postgresql 04:55:22.80 Submit issues and feature requests at https://github.com/bitnami/containers/issues
+2022-11-18 01:55:22 postgresql 04:55:22.80 
+2022-11-18 01:55:22 postgresql 04:55:22.82 INFO  ==> ** Starting PostgreSQL setup **
+2022-11-18 01:55:22 postgresql 04:55:22.85 INFO  ==> Validating settings in POSTGRESQL_* env vars..
+2022-11-18 01:55:22 postgresql 04:55:22.85 ERROR ==> The POSTGRESQL_PASSWORD environment variable is empty or not set. Set the environment variable ALLOW_EMPTY_PASSWORD=yes to allow the container to be started with blank passwords. This is recommended only for development.
+2022-11-18 01:55:22 postgresql 04:55:22.86 ERROR ==> The POSTGRESQL_PASSWORD environment variable is empty or not set. Set the environment variable ALLOW_EMPTY_PASSWORD=yes to allow the container to be started with blank passwords. This is recommended only for development.
+2022-11-18 01:55:45 postgresql 04:55:45.37 
+2022-11-18 01:55:45 postgresql 04:55:45.37 Welcome to the Bitnami postgresql container
+2022-11-18 01:55:45 postgresql 04:55:45.37 Subscribe to project updates by watching https://github.com/bitnami/containers
+2022-11-18 01:55:45 postgresql 04:55:45.37 Submit issues and feature requests at https://github.com/bitnami/containers/issues
+2022-11-18 01:55:45 postgresql 04:55:45.38 
+2022-11-18 01:55:45 postgresql 04:55:45.40 INFO  ==> ** Starting PostgreSQL setup **
+2022-11-18 01:55:45 postgresql 04:55:45.42 INFO  ==> Validating settings in POSTGRESQL_* env vars..
+2022-11-18 01:55:45 postgresql 04:55:45.42 ERROR ==> The POSTGRESQL_PASSWORD environment variable is empty or not set. Set the environment variable ALLOW_EMPTY_PASSWORD=yes to allow the container to be started with blank passwords. This is recommended only for development.
+2022-11-18 01:55:45 postgresql 04:55:45.43 ERROR ==> The POSTGRESQL_PASSWORD environment variable is empty or not set. Set the environment variable ALLOW_EMPTY_PASSWORD=yes to allow the container to be started with blank passwords. This is recommended only for development.
