@@ -1,5 +1,5 @@
 docker run -d --name postgresql -e POSTGRES_USER=dev_PSQL -e POSTGRES_PASSWORD=My_3c0mm#PSQL --network netPSQL --volume VOL_PSQL:/bitnami bitnami/postgresql:latest
-docker run -d --name phppgadmin -p 80:8080 -p 443:8443 --network netPSQL bitnami/postgresql:latest
+docker run -d --name phppgadmin -p 80:8080 -p 443:8443 --network netPSQL bitnami/phppgadmin:latest
 
 2022-11-18 01:55:22 postgresql 04:55:22.79 
 2022-11-18 01:55:22 postgresql 04:55:22.79 Welcome to the Bitnami postgresql container
