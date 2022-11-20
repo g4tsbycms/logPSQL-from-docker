@@ -3,6 +3,12 @@ docker run -d --name phppgadmin -p 80:8080 -p 443:8443 --network netPSQL bitnami
 
 sudo chown -R my_username my_folder
 
+Run composer install or php composer.phar install
+Run php artisan key:generate
+Run php artisan migrate
+Run php artisan db:seed to run seeders, if any.
+Run php artisan serve
+
 2022-11-18 01:55:22 postgresql 04:55:22.79 
 2022-11-18 01:55:22 postgresql 04:55:22.79 Welcome to the Bitnami postgresql container
 2022-11-18 01:55:22 postgresql 04:55:22.80 Subscribe to project updates by watching https://github.com/bitnami/containers
