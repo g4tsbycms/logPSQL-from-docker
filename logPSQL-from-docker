@@ -2,6 +2,41 @@ docker run -d --name postgresql -e POSTGRES_USER=dev_PSQL -e POSTGRES_PASSWORD=M
 docker run -d --name phppgadmin -p 80:8080 -p 443:8443 --network netPSQL bitnami/phppgadmin:latest
 
 sudo chown -R my_username my_folder
+psql -d mydb -U myuser
+psql -h myhost -d mydb -U myuser
+#######################
+Backup FAQ: How do I create a backup of a Postgresql database?
+
+Solution: I create a Postgresql backup (a Postgresql dump) for this website using the pg_dump command, like this:
+
+pg_dump -h db_server -U db_user -W db_name > db.dump
+
+Password:
+----------------------------------------------------------------
+This approach also works:
+
+export PGPASSWORD=my-secret-password
+pg_dump -h localhost -U <username> <database-name> > db_name.dump
+-----------------------------------------------------------------
+psql commands
+
+To issue any of these psql commands, first log into your database using the psql command, then issue any of the commands shown in the "Command" column below:
+Listing 	Command 	Argument
+Table, index, view, or sequence 	\d 	name
+Tables 	\dt 	name
+Indexes 	\di 	name
+Sequences 	\ds 	name
+Views 	\dv 	name
+Permissions 	\dp or \z 	name
+System tables 	\dS 	name
+Large objects 	\dl 	name
+Types 	\dT 	name
+Functions 	\df 	name
+Operators 	\do 	name
+Aggregates 	\da 	name
+Comments 	\dd 	name
+Databases 	\l 	name
+###############################################################
 
 Run composer install or php composer.phar install
 Run php artisan key:generate
